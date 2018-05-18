@@ -1,93 +1,93 @@
 ---
-title: Installing Unlaunch
+title: Installazione di Unlaunch
 layout: single
 sidebar:
   nav: "side"
 ---
 
-If you have a non-USA console, you must have a DSiWare exploit previously installed to continue.
+Se si possiede una console di regione non USA, è necessario avere un exploit DSiWare già installato per continuare.
 {: .notice--info}
 
-Unlaunch is currently in a beta state. Please proceed with caution.
+Unlaunch è attualmente in beta. Procedere con attenzione.
 {: .notice--info}
 
-Unlaunch is a DSi bootcode exploit which will allow you to install HiyaCFW, a DSi Custom Firmware, to your console.
+Unlaunch è un exploit bootcode DSi che ti consentirà di installare HiyaCFW, un Custom Firmware per DSi, sulla tua console.
 
 ## Downloads
-- The latest release of [Unlaunch](http://problemkaputt.de/unlaunch.zip)
-- The latest release of [HBMenu](https://github.com/devkitPro/nds-hb-menu/releases/){:target="_blank"}
-- The latest release of [ugopwn](/assets/files/ugopwn.zip)
-  - Only for USA consoles
-- The latest release of [twlnf](https://github.com/Jimmy-Z/twlnf/releases){:target="_blank"}
-- The latest release of [Python 3](https://www.python.org/downloads/){:target="_blank"}
-- The latest release of [DSi SRL Extractor](/assets/files/dsi_srl_extract.zip)
+- L'ultima versione di [Unlaunch](http://problemkaputt.de/unlaunch.zip)
+- L'ultima versione di [HBMenu](https://github.com/devkitPro/nds-hb-menu/releases/){:target="_blank"}
+- L'ultima versione di [ugopwn](/assets/files/ugopwn.zip)
+  - Solo per console di regione USA
+- L'ultima versione di [twlnf](https://github.com/Jimmy-Z/twlnf/releases){:target="_blank"}
+- L'ultima versione di [Python 3](https://www.python.org/downloads/){:target="_blank"}
+- L'ultima versione di [DSi SRL Extractor](/assets/files/dsi_srl_extract.zip)
 
-## Preparing your SD card
+## Preparazione della Scheda SD
 
-1. Install Python 3 on your computer
-2. Open the System Settings application
-3. Select **Data Management > System Memory > Flipnote Studio > Copy > Yes**
-	- If Data Management isn't appearing, open the DSi Shop, close it, and then try again
-4. Once finished, power off your device
-5. Take your SD card out of your console and insert it into your computer
-6. Copy the contents of the ugopwn `.zip` file to the root of your SD card
-  - Only for USA consoles
-7. Copy the contents of the twlnf `.7z` file to the root of your SD card, and rename `twlnf.nds` to `boot.nds`
-8. Copy the contents of the DSi SRL Extractor `.zip` file to a folder on your Desktop
-9. Open the SD card drive on your computer
-10. Navigate to /Private/DS/Title/
-11. Copy the `.bin` file to your DSi SRL Extractor folder
-12. Run the console_id `.py` file inside the folder
-  - This script requires [WINE](https://www.winehq.org/){:target="_blank"} on Mac/Linux/*nix systems
-13. When prompted, press Enter
-14. Copy the new console_id `.txt` file to the root of your SD card
-15. Eject your SD card and insert it back into your DSi
+1. Installa Python 3 sul tuo computer
+2. Apri l'applicazione Impostazioni
+3. Seleziona **Gestione Dati > Console > Flipnote Studio > Copia > Sì**
+	- Se Gestione Dati non appare, apri il DSi Shop, chiudilo e riprova
+4. Una volta finito, spegni il dispositivo
+5. Togli la Scheda SD dalla console e inseriscila nel Computer
+6. Copia il contenuto del file `.zip` di ugopwn nella root della tua Scheda SD
+  - Solo per console di regione USA
+7. Copia il contenuto del file `.7z` di twlnf nella root della tua Scheda SD, e rinomina `twlnf.nds` a `boot.nds`
+8. Copia il contenuto del file `.zip` di DSi SRL Extractor in una cartella sul tuo Desktop
+9. Apri la Scheda SD sul tuo computer
+10. Naviga a /Private/DS/Title/
+11. Copia il file `.bin` nella cartella di DSi SRL Extractor
+12. Esegui il file console_id `.py` dentro la cartella
+  - Questo script richiede [WINE](https://www.winehq.org/){:target="_blank"} su sistemi Mac/Linux/*nix
+13. Quando richiesto, premi Invio
+14. Copia il nuovo file console_id `.txt` nella root della Scheda SD
+15. Espelli la Scheda SD e inseriscila nuovamente nel DSi
 
-## Creating a NAND backup
+## Creazione di un backup della NAND
 
-1. Open the Flipnote Studio application
-  - Ensure that the *booting to Calendar mode* is disabled in Flipnote Studio's settings
-  - If you already have another DSiWare exploit installed, open that and skip to Step 14
-2. Select **View Flipnote > SD Card > Select Folder > User > ugopwn**
-3. Click on the note with the red bottom half
-4. Select "Edit"
-5. Click on the Flipnote frog icon in the bottom left
-6. Click on the film roll icon
-7. Select **Copy > Back > Exit**
-8. Click the second note.
-9. Click on the Flipnote frog icon in the bottom left
-10. Click on the film roll icon.
-11. Click on the single right arrow (the next to last arrow icon) two times
-  - You will see a new frame be created
-12. Click on the paste button exactly 122 times.
-13. Select "Erase" and then "Paste"
-  - This should launch twlnf
-14. When prompted, press **A** to create a nand backup
-  - This will take a few minutes
-  - Store this NAND backup in a safe location, it is a critical backup and we will need it later to install HiyaCFW
-15. Press **B** to quit twlnf
-  - Your console will power off
+1. Apri l'applicazione Flipnote Studio
+  - Assicurati che l'opzione *Apri calendario all'avvio* sia disabilitata nelle impostazioni di Flipnote Studio
+  - Se hai già un exploit DSiWare installato, apri quello e salta al Passo 14
+2. Seleziona **Visualizza > Scheda SD > Seleziona Cartella > User > ugopwn**
+3. Clicca sul Flipnote per metà rosso
+4. Seleziona "Modifica"
+5. Clicca sull'icona della rana in basso a sinistra
+6. Clicca sull'icona del rullino
+7. Seleziona **Copia > Indietro > Esci**
+8. Clicca sul seondo flipnote.
+9. Clicca sull'icona della rana in basso a sinistra
+10. Clicca sull'icona del rullino.
+11. Clicca sul tasto con una sola freccia a destra (accanto all'ultimo tasto con due freccie) due volte
+  - Verrà creato un nuovo foglio
+12. Clicca il tasto incolla esattamente 122 volte.
+13. Seleziona "Cancella" e poi "Incolla"
+  - Ciò dovrebbe avviare twlnf
+14. Quando richiesto, premi **A** per creare un backup della NAND
+  - Questo richiederà qualche minuto
+  - Mantieni questo Backuo della NAND in un luogo sicuro, è un backup critico e ci servirà dopo per installare HiyaCFW
+15. Premi **B** per uscire da twlnf
+  - La console si spegnerà
 
-## Installation
+## Installazione
 
-1. Insert your system's SD card into your computer
-2. Copy `BOOT.NDS` from the `hbmenu` folder in the HBMenu `.tar.bz2` file to the root of your SD card
-  - twlnf is currently your `boot.nds`; for now, rename it to `boot.bak` or `twlnf.nds`
-3. Copy `UNLAUNCH.DSI` from the Unlaunch `.zip` file to the root of your SD card
-4. Rename `UNLAUNCH.DSI` to `unlaunch.nds`
-5. Unplug your SD card, and insert it in your DSi
-6. Power on your DSi, and repeat steps 1 through 13 in **Creating a NAND backup**
-  - HBMenu should appear
-7. Navigate to `unlaunch.nds`, and press **A**
-  - Unlaunch's installer should appear
-8. Navigate to `INSTALL NOW` and press **A**
-  - If Unlaunch freezes at `LOADING FAT`, please read our [FAQ](/help/faq)
-9. When done, navigate to `POWER DOWN` and press **A**
-  - Your system will power off
-10. Turn your system on, to verify Unlaunch installed properly
-  - You should briefly see the Unlaunch screen, and boot into a version of the DSi Menu with no sound
+1. Inserisci la Scheda SD nel tuo Computer
+2. Copia `BOOT.NDS` dalla cartella `hbmenu` nel file `.tar.bz2` di HBMenu nella root della Scheda SD
+  - twlnf è attualmente il tuo `boot.nds`; per ora, rinominalo in `boot.bak` oppure `twlnf.nds`
+3. Copia `UNLAUNCH.DSI` dal file `.zip` di Unlaunch nella root della Scheda SD
+4. Rinomina `UNLAUNCH.DSI` a `unlaunch.nds`
+5. Rimuovi la Scheda SD e inseriscila nel DSi
+6. Accendi il tuo DSi, e ripeti i passi da 1 fino a 13 in **Creazione di un backup della NAND**
+  - HBMenu dovrebbe apparire
+7. Naviga a `unlaunch.nds`, e premi **A**
+  - L'installer di Unlaunch dovrebbe apparire
+8. Naviga a `INSTALL NOW` e premi **A**
+  - Se Unlaunch si blocca a `LOADING FAT`, leggi il nostro [FAQ](/help/faq)
+9. Una volta fatto, naviga a `POWER DOWN` e premi **A**
+  - Il DSi si spegnerà
+10. Accendi la console per verificare che Unlaunch sia stato installato correttamente
+  - Dovresti vedere brevemente la schermata di Unlaunch, e avviarti in una versione del menu DSi senza suoni
 
-With Unlaunch installed, your system now has primitive brick protection, unless the launcher's TMD file is destroyed. Unlaunch has protections that should prevent this from happening, and HiyaCFW uses your SD card as the DSi's NAND, making your system theoretically unbrickable.
+Con Unlaunch installato, il tuo sistema ha una protezione dai brick di base, a meno che il file TMD del launcher non venga distrutto. Unlaunch ha protezioni che dovrebbero impedire questo dal succedere, e HiyaCFW usa la tua Scheda SD come NAND del DSi, facendo così il sistema teoricamente non brickabile.
 
-[Installing HiyaCFW](/guide/installing-hiyacfw){: .btn .btn--light-outline}
+[Installazione di HiyaCFW](/guide/installing-hiyacfw){: .btn .btn--light-outline}
 {: style="text-align: center;"}
