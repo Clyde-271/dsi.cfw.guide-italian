@@ -1,5 +1,5 @@
 ---
-title: Credits
+title: Riconoscimenti
 layout: single
 sidebar:
   nav: "side"
