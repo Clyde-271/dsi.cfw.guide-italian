@@ -33,10 +33,10 @@ HiyaCFW è un custom firmware per Nintendo DSi che, una volta installato, permet
 - [Script d'aiuto per l'installazione di HiyaCFW](/assets/files/hiyacfw_helper.zip)
 
 ## Preparazione
-1. Inserisci la tua scheda SD da <2GB nel tuo PC
-2. Copia *il contenuto* del file '.zip' di NUSDownloader in una cartella del PC
-3. Copia *il contenuto* del file '.7z' di HiyaCFW in una cartella del PC
-4. Copia *il contenuto* del file '.7z' dell'HiyaCFW helper in una cartella del PC
+1. Inserisci la scheda SD da <2GB nel computer
+2. Copia *il contenuto* del file `.zip` di NUSDownloader in una cartella del PC
+3. Copia *il contenuto* del file `.7z` di HiyaCFW in una cartella del PC
+4. Copia *il contenuto* del file `.7z` dell'HiyaCFW helper nella cartella 'for PC' di HiyaCFW
 5. Copia *il contenuto* del file '.zip' di ugopwn nella root della scheda SD da <2GB
 6. Copia *il contenuto* del file '.7z' di twlnf nella root della scheda SD da <2GB, rinominando 'twlnf.nds' in 'boot.nds'
 7. Copia il file 'console_id.txt' dalla root della scheda SD usata normalmente alla root della SD da <2GB,
@@ -48,8 +48,8 @@ HiyaCFW è un custom firmware per Nintendo DSi che, una volta installato, permet
 11. Seleziona **Database > System (DSi) > System Menu (Launcher) > [Regione del tuo DSi] > v512 > Start NUS Download!**
 12. Esci da NUSDownloader
 13. Naviga in **titles > 00030017484e41XX > 512** nella cartella di NUSDownloader
-14. Copia '00000002.app' dalla cartella '512' alla sottocartella 'for PC' nella cartella di HiyaCFW
-15. Copia il backup della tua NAND ('nand.bin') nella cartella 'for PC' di HiyaCFW
+14. Copia `00000002.app` dalla cartella `512` alla sottocartella `for PC` nella cartella di HiyaCFW
+15. Copia il backup della tua NAND (`nand.bin`) nella cartella `for PC` di HiyaCFW
 
 ## Istruzioni
 1. Inserisci la tua scheda <2GB nel tuo DSi
@@ -71,25 +71,25 @@ HiyaCFW è un custom firmware per Nintendo DSi che, una volta installato, permet
 14. Clicca  il tasto "Incolla" esattamente 122 volte
 15. Clicca "Cancella" e poi "Incolla"
   - Ciò dovrebbe avviare twlnf
-16. Premi **X** per montare la NAND di sistema direttamente
+16. Premi **X** per montare la NAND direttamente
 17. Premi **START** per aprire il menù di twlnf
 18. Premi **R** per dumpare il contenuto della NAND sulla scheda SD
   - Il processo impiegerà qualche minuto
   - Mantieni il DSi collegato al caricatore durante la durata del processo, in modo da evitare che si spenga
-  - Quando appare il testo 'walk returned 0', il processo è completato
+  - Quando appare il testo `walk returned 0`, il processo è completato
 19. Una volta finito, premi **Select** per uscire da twlnf
 20. Premi **A** per confermare
   - La console si spegnerà
 21. Inserisci la tua scheda SD da <2GB nel tuo PC
-22. Sposta tutti i file dalla cartella 'dump' alla root della scheda SD
+22. Sposta tutti i file dalla cartella `dump` alla root della scheda SD
   - Questo prepara la "SD NAND", dalla quale HiyaCFW si avvierà
-23. Apri la cartella 'for PC' di HiyaCFW
-24. Esegui il file 'hiyacfw_helper.py' per effettuare le modifiche necessarie
+23. Apri la cartella `for PC` di HiyaCFW
+24. Esegui il file `hiyacfw_helper.py` per effettuare le modifiche necessarie
   - Questo script richiede [WINE](https://www.winehq.org/){:target="_blank"} sui sistemi Mac/Linux/*nix
-25. Apri la cartella 'Modified Files' appena creata
-26. Copia il file 'bootloader.nds' nella root della scheda SD da <2GB 
+25. Apri la cartella `Modified Files` appena creata
+26. Copia il file `bootloader.nds` nella root della scheda SD da <2GB 
 27. Copia il file 00000002.app nella cartella **title > 00030017 > 484e41XX > content** della scheda SD da <2GB
-28. Copia *il contenuto* della cartella 'for 2GB (or lower) SD card (SDNAND)' di HiyaCFW nella root della scheda SD da <2GB
+28. Copia *il contenuto* della cartella `for 2GB (or lower) SD card (SDNAND)` di HiyaCFW nella root della scheda SD da <2GB
 29. Scollega la scheda SD da <2GB, e inseriscila nel DSi
 30. Accendi la console
   - Dovrebbe apparire la schermata d'avvio di HiyaCFW
