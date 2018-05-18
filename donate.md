@@ -1,6 +1,6 @@
 ---
 layout: donations
-title: Donations
+title: Donazioni
 excerpt: Support the creators of the guide
 header:
   overlay_color: "#1a1d24"
