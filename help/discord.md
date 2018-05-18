@@ -1,16 +1,16 @@
 ---
 title: Discord
-layout: help
+layout: aiuto
 sidebar:
   nav: "side"
 ---
 
-Please read our [FAQ](/help/faq) before asking for help on Discord.
+Leggi cortesemente le [FAQ](/help/faq) prima di chiedere aiuto su Discord.
 {: .notice--info}
 
-If you have any issues or problems regarding the guides on this site, please ask on Discord.
+Per qualunque errore o problema con le guide, chiedi pure aiuto su Discord.
 
 ---
 
-[DSiBrew Discord](https://discord.gg/w4SKAr8){: .btn .btn--light-outline .btn--large}{:target="_blank"}
+[Canale Discord di DsiBrew](https://discord.gg/w4SKAr8){: .btn .btn--light-outline .btn--large}{:target="_blank"}
 {: .text-center}
