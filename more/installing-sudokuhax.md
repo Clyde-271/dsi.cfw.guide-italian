@@ -5,7 +5,7 @@ sidebar:
   nav: "side"
 ---
 
-Questa guida attualmente supporta solo console di regione USA.
+Attalmente questa guida supporta solo console di regione USA.
 {: .notice--info}
 
 Assicurati di avere almeno 30 blocchi liberi sulla memoria interna della tua console, altrimenti **causeresti un brick**!

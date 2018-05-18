@@ -1,74 +1,73 @@
 ---
-title: Installing an Entrypoint (pre-owned title)
+title: Installazione di un entrypoint (titolo già acquistato)
 layout: single
 sidebar:
   nav: "side"
 ---
 
-This guide only supports USA consoles for now.
+Attalmente questa guida supporta solo console di regione USA.
 {: .notice--info}
 
-We will now use pre-made scripts to simplify the installation of homebrew entrypoints. These entrypoints will allow us to load homebrew within seconds of launching the target application.
+Adessi utilizzeremo degli script già esistenti per semplificare l'installazione di un entrypoint homebrew. Questi entrypoint permettono di avviare homebrew pochi secondi dopo l'avvio dell'applicazione.
 
-Using 4swordshax will only allow you to run emulators and homebrew applications. If you would like to run commercial roms using SRLoader, we recommend installing [sudokuhax](/guide/installing-sudokuhax) instead of 4swordshax.
+4swordshax permette nsolamente di utilizzare emulatori e applicazioni homebrew. Se si vogliono eseguire ROM retail usand SRLoader, si consiglia di installare [sudokuhax](/guide/installing-sudokuhax) instead of 4swordshax.
 
-## What you need
+## Requisiti
 
-* The [twlnf entrypoint installation pack](/assets/files/twlnf-entrypoint-pack.zip)
+*Il [packetto d'installazione di entrypoint per twlnf](/assets/files/twlnf-entrypoint-pack.zip)
 
-## Preparation
+## Preparazione
 
-1. Insert your device's SD card into your computer
-2. Copy the contents of the twlnf entrypoint installation `.zip` to the root of your SD card
-3. Unplug your SD card, and insert it in your DSi
+1. Inserisci la scheda SD nel computer
+2. Copia il contenuto del file `.zip` dell'installazione dell'entrypoint per twlnf nella root della scheda SD
+3. Scollega la scheda SD e inseriscila nel DSi
 
-## Launching twlnf
+## Avvio di twlnf
 
-1. Open the Flipnote Studio application
-  - Ensure that the *booting to Calendar mode* is disabled in Flipnote Studio's settings
-2. Select **View Flipnote > SD Card > Select Folder > User > ugopwn**
-3. Click on the note with the red bottom half
-4. Select "Edit"
-5. Click on the Flipnote frog icon in the bottom left
-6. Click on the film roll icon
-7. Select **Copy > Back > Exit**
-8. Click on the Flipnote frog icon in the bottom left
-8. Click on the film roll icon.
-9. Click on the single right arrow (the next to last arrow icon) two times
-  - You will see a new frame be created
-10. Click on the paste button exactly 122 times.
-11. Select "Erase" and then "Paste"
-  - This should launch twlnf
+1. Apri Flipnote Studio
+  - Assicurati che *Apri calendario all'avvio* sia disabilitato nelle impostazioni di Flipnote Studio
+2. Seleziona **Visualizza > Scheda SD > Seleziona cartella > Utente > ugopwn**
+3. Clicca sul Flipnote per metà rosso
+4. Seleziona "Modifica"
+5. Clicca sull'icona della rana in basso a sinistra
+6. Clicca sull'icona della pellicola
+7. Seleziona **Copia > Indietro > Esci"
+8. Clicca sul secondo Flipnote
+9. Clicca sull'icona della rana in basso a sinistra
+10. Clicca sull'icona della pellicola
+11. Clicca sul tasto con una sola freccia a destra (accanto all'ultimo tasto con due freccie) due volte
+  - Verrà creato un nuovo foglio
+12. Clicca  il tasto "Incolla" esattamente 122 volte
+13. Clicca "Cancella" e poi "Incolla"
+  - Ciò dovrebbe avviare twlnf
 
-## Installing your Entrypoint
+## Installazione dell'entrypoint
 
-1. If prompted in twlnf, press **A** to create a NAND backup
-  - This may take a few minutes
-  - Store this NAND backup in a safe location, it is a critical backup
-2. Press **X** to mount the NAND directly
-
-  - twlnf does not list this as an option
-
-3. Navigate to the .nfs script corresponding with the DSiWare you have
+1. Se viene chieso in twlnf, premi **A** per creare un backup della NAND
+  - Il processo impiegerà qualche minuto
+  - Salva questo backup in una posizione sicura, in quanto si tratta di un backup estremamente importante
+2. Premi **X** per momtare la NAND direttamente
+  - twlnf non visualizza questa opzione tra le operazioni possibili
+3. Seleziona lo script in formato .nfs corrispondente al DSiWare installato sulla console
   - Fieldrunners - `install_fieldrunhax_usa.nfs`
   - Legends of Exidia - `install_exidiahax_usa.nfs`
   - Guitar Rock Tour - `install_grtpwn_usa.nfs`
   -  The Legend of Zelda: Four Swords Anniversary - `install_4swordshax_usa.nfs`
-4. Press **A** to execute the script
-  - If the dry run fails, you do not have the DSiWare installed
-5. Press **A** to install the application to NAND
-6. Once finished, press **Select** to quit twlnf
-7. Press **A** to confirm
-  - Your console will power off
+4. Premi **A** per eseguire lo script
+  - Se viene visualizzato un errore, non hai installato il DSiWare corrispondente
+5. Premi **A** per installare l'applicazione nella NAND
+6. Una volta finito, premi **Select** per uscire da twlnf
+7. Premi **A** per confermare
+  - La console si spegnerà
 
-## Launching your Entrypoint
+## Avvio dell'entrypoint
 
-1. Power on your console
+1. Accendi la console
 2. Open your exploited application
-3. Perform the following:
-  - Fieldrunners - Wait for the game to load, and press **Scores** on the main menu
-  - Legends of Exidia - Navigate past the two start screens, select the first save file, and press **Continue**
-  - Guitar Rock Tour - Scroll down, and press **High Scores** > **Drums** > **Easy**
-  -  The Legend of Zelda: Four Swords Anniversary - Just launch the game, 4swordshax requires no user intervention
+3. Esegui uno dei seguenti passaggi:
+  - Fieldrunners - Attendi il caricamento del gioco, poi seleziona **Scores** nel menù principale
+  - Legends of Exidia - Attendi il passaggio delle due schermate d'avvio, seleziona il primo salvataggio e premi **Continue**
+  - Guitar Rock Tour - Scendi giù, poi premi **High Scores** > **Drums** > **Easy**
+  -  The Legend of Zelda: Four Swords Anniversary - JBasta avviare il gioco, 4swordshax non richiede nessuna interazione 
 
-Your entrypoint will now load whatever homebrew you have on your SD card as `boot.nds`.
+Adesso l'entrypoint caricherà qualsiasi homebrew sulla scheda SD salvato come `boot.nds`.

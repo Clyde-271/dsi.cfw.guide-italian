@@ -1,30 +1,30 @@
 ---
-title: Installing an Entrypoint
+title: Installazione di un entrypoint
 layout: single
 sidebar:
   nav: "side"
 ---
 
-This guide only supports USA consoles for now.
+Attalmente questa guida supporta solo console di regione USA.
 {: .notice--info}
 
-We now have the option of installing multiple various entrypoints, allowing us to avoid running ugopwn every time we want to launch homebrew. This guide uses ugopwn, which is only supported on USA consoles for now, to install your entrypoint. A release of ugopwn for EUR and JPN consoles has been promised soon.
+È possibile installare vari entrypoint in modo da evitare di dover eseguire ugopwn ogni volta che si vogliono utilizzare homebrew. Questa guida usa ugopwn, che al momento supporta solo console di regione USA, per installare l'entrypoint. Una versione di ugopwn per console EUR e JAP dovrebbe essere rilasciata a breve
 
-This is only necessary if you do not wish to install HiyaCFW, but want a homebrew entrypoint on your system.
+Questa guida è necessaria solo se non si vuole installare HiyaCFW, ma si vuole avere un entrypoint per homebrew sulla propria console
 
-If you already have one of the following titles:
+Se possiedi già uno di questi giochi:
 
 * Fieldrunners
 * Legends of Exidia
 * Guitar Rock Tour
 * The Legend of Zelda: Four Swords Anniversary
 
-follow the **Installing an Entrypoint (pre-owned title)** guide, which contains twlnf scripts to install the hacked save.
+segui la guida **Installazione di un entrypoint (titolo già acquistato)** che contiene degli script per twlnf per installare un salvataggio modificato.
 
-[Installing an Entrypoint (pre-owned title)](/more/installing-an-entrypoint-(pre-owned)){: .btn .btn--light-outline}
+[Installazione di un entrypoint (titolo già acquistato)](/more/installing-an-entrypoint-(pre-owned)){: .btn .btn--light-outline}
 {: style="text-align: center;"}
 
-Otherwise, follow the **Installing Sudokuhax** guide, which will install an older version of Sudoku, as well as a corresponding hacked save.
+Altrimenti, segui la guida **Installazione di Sudokuhax**, che installera una versione vecchia di Sudoku, assieme al corrispondente salvataggio modificato.
 
-[Installing an Entrypoint (sudokuhax)](/more/installing-sudokuhax){: .btn .btn--light-outline}
+[Installazione di un entrypoint (sudokuhax)](/more/installing-sudokuhax){: .btn .btn--light-outline}
 {: style="text-align: center;"}

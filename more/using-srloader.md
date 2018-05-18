@@ -8,7 +8,7 @@ sidebar:
 nds-bootstrap è attualmente un proof-of-concept, ed è ancora lontano dall'essere completo. Aspettati tempo di caricamento lunghi e problemi di compatibilità. È altamente consigliato consultare la [lista di compatibilità](https://docs.google.com/spreadsheets/d/1M7MxYQzVhb4604esdvo57a7crSvbGzFIdotLW0bm0Co/edit#gid=0){:target="_blank"}.
 {: .notice--info}
 
-SRLoader è un'applicazione homebrew che ti consente ti eseguire applicazioni homebrew, così come le ROM commerciali usando [nds-bootstrap](https://github.com/ahezard/nds-bootstrap){:target="_blank"}. SRLoader ha anche vari emulatori inclusi, incluso l' emulatore GBA, che di consentirà di eseguire ROM del Gameboy Color, NES e GBA.
+SRLoader è un'applicazione homebrew che ti consente ti eseguire applicazioni homebrew, così come le ROM retail usando [nds-bootstrap](https://github.com/ahezard/nds-bootstrap){:target="_blank"}. SRLoader ha anche vari emulatori inclusi, incluso l' emulatore GBA, che di consentirà di eseguire ROM del Gameboy Color, NES e GBA.
 
 Puoi saperne di più su SRLoader [qui](https://gbatemp.net/threads/srloader-gui-for-flashcards-also-a-nds-app-for-dsi.472200/){:target="_blank"}.
 

@@ -2,7 +2,7 @@
 layout: splash
 permalink: /
 title: DSi Guide
-excerpt: "Una guida completa per installare homebrew sul DSi, da stock a HiyaCFW."
+excerpt: "Una guida completa per installare homebrew sul DSi, da zero a HiyaCFW."
 header:
   overlay_color: "#1a1d24"
   cta_label: "Inizia"
