@@ -2,32 +2,32 @@
 layout: splash
 permalink: /
 title: DSi Guide
-excerpt: "A complete Nintendo DSi homebrew guide, from stock to HiyaCFW."
+excerpt: "Una guida completa per installare homebrew sul DSi, da stock a HiyaCFW."
 header:
   overlay_color: "#1a1d24"
-  cta_label: "Get Started"
+  cta_label: "Inizia"
   cta_url: /guide/installing-unlaunch
 ---
 
-This guide is not compatible with development DSi consoles or Chinese iQue DSi consoles.
+Questa guida non è compatibile con console per sviluppatori (dev unit) o console iQue DSi cinesi.
 {: .notice--info}
 
-## What is homebrew?
+## Cosa sono gli homebrew?
 
-Homebrew applications are custom, user-made software, which haven't been authorised by Nintendo. This can include save editing tools, games, emulators, and more.
+Gli homebrew sono applicazioni personalizzate, create da utenti senza l'autorizzazione di Nintendo. Queste possono essere strumenti per la modifica dei salvataggi, giochi, emulatori ed altro.
 
-Homebrew can be run for free on your DSi as long as you have a copy of Flipnote Studio or a previous DSiWare exploit installed.
+Gli homebrew possono essere eseguiti gratutitamente sul tuo DSi se si possiede Flipnote Studio (attualmente solo per console USA) o un exploit DSiWare già installato.
 
-## What does this guide install?
+## Cosa si installa seguendo questa guida?
 
-This guide will install HiyaCFW, a custom firmware for the DSi. CFW can be set up on any console on any version.
+Seguendo questa guida verrà installato HiyaCFW, un custom firmware per il DSi. I CFW si possono installare per qualsiasi versione del firmware.
 
-Custom firmware enables you to use more advanced hacks that userland homebrew can’t easily do. For instance, signature patches let you install unsigned titles that appear right on your System Menu.
+I custom firmware consentono di utilizzare hack più avanzate che gli homebrew userland non permettono di usare. Per esempio, le patch delle firme digitali consentono di installare applicazioni non firmate facendole apparire direttamente sul Menù Home.
 
-## What should I know before starting?
+## Cosa devo sapere prima di iniziare?
 
-- Homebrew allows you to modify your system, which could easily result in a brick if done improperly
-- Be careful when restoring modified NAND backups and make sure to test them in [NO$GBA](https://problemkaputt.de/gba.htm){:target="_blank"} before restoring them
-- Keep your console plugged in at all times during this process to avoid sudden power loss
-- You will need an SD card to use this guide
-  - Your console should come with one
+- Gli homebrew permettono di modificare il sistema operativo del DSi, il che potrebbe causare facilmente un brick utilizzandoli impropriamente
+- Fai attenzione nel ripristinare backup della NAND modificati e assicurati di testarli in [NO$GBA](https://problemkaputt.de/gba.htm){:target="_blank"} prima di ripristinarli
+- Mantieni la console collegata alla corrente per tutta la durata della guida per evitare che si spenga
+- Una scheda SD è necessaria per questa guida
+  - La tua console dovrebbe già averne una
