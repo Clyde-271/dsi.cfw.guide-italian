@@ -78,7 +78,7 @@ Questo metodo **degrada gravemente** la NAND e dev'essere usato come **ultima ri
 12. Quando richiesto, premi Invio
 13. Copia il nuovo file `console_id.txt` in un posto sicuro sul tuo computer
 zip
-## Using TempNAND
+## Utilizzo di TempNAND
 
 1. Scarica ed estrai il file `.zip` di TempNAND da qualche parte sul Computer
 2. Apri il file `.jar` di TempNAND
