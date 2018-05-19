@@ -1,148 +1,148 @@
 ---
-title: Installing Unlaunch (TempNAND)
+title: Installazione Unlaunch (TempNAND)
 layout: single
 toc: true
 sidebar:
   nav: "side"
 ---
 
-If you do not have a DSiWare exploit already installed, you must have a USA console with Flipnote Studio installed, or a hardware modification capable of installing DSiWare.
+Se non hai già un exploit DSiWare installato, devi avere una console di regione USA con Flipnote Studio installato, o una modifica hardware capace di installare DSiWare.
 {: .notice--info}
 
-This method **severely degrades** the NAND and should only be used as a **last resort**.
+Questo metodo **degrada gravemente** la NAND e dev'essere usato come **ultima risorsa**.
 {: .notice--danger}
 
-## Requirements
+## Requisiti
 
-- The latest release of [Unlaunch](http://problemkaputt.de/unlaunch.zip)
-- The latest release of [ugopwn](/assets/files/ugopwn.zip)
-  - Only for USA consoles
-- The latest release of [fwTool](/assets/files/fwTool_1.6.zip)
-- The latest release of [TempNAND](https://github.com/ThisIsDaAccount/TempNand/releases/latest){:target="_blank"}
-- The latest release of [Java](https://java.com/en/download/){:target="_blank"}
-- The latest release of [Python 3](https://www.python.org/downloads/){:target="_blank"}
-- The latest release of [DSi SRL Extractor](/assets/files/dsi_srl_extract.zip)
-- The latest release of [No$GBA](http://problemkaputt.de/gba.htm){:target="_blank"}
-- A random `.nds` rom file
+- L'ultima versione di [Unlaunch](http://problemkaputt.de/unlaunch.zip)
+- L'ultima versione di [ugopwn](/assets/files/ugopwn.zip)
+  - Solo per console di regione USA
+- L'ultima versione di [fwTool](/assets/files/fwTool_1.6.zip)
+- L'ultima versione di [TempNAND](https://github.com/ThisIsDaAccount/TempNand/releases/latest){:target="_blank"}
+- L'ultima versione di [Java](https://java.com/en/download/){:target="_blank"}
+- L'ultima versione di [Python 3](https://www.python.org/downloads/){:target="_blank"}
+- L'ultima versione di [DSi SRL Extractor](/assets/files/dsi_srl_extract.zip)
+- L'ultima versione di [No$GBA](http://problemkaputt.de/gba.htm){:target="_blank"}
+- Un file rom `.nds` qualsiasi
 
-## Preparing SD card
+## Preparazione Scheda SD
 
-1. Copy the contents of the fwTool `.zip` file to the root of your SD card
-2. Rename the fwTool `.nds` file to `boot.nds`
-3. Copy the contents of the ugopwn `.zip` file to the root of your SD card
-  - Only for USA consoles
+1. Copia il contenuto del file `.zip` di fwTool nella root della Scheda SD
+2. Rinomina il file `.nds` di fwTool a `boot.nds`
+3. Copia il contenuto del file `.zip` di ugopwn nella root della Scheda SD
+  - Solo per console di regione USA
 
-## Dumping key files
+## Dump dei file chiave
 
-1. Open the System Settings application
-2. Select **Data Management > System Memory > Flipnote Studio > Copy > Yes**
-	- If Data Management isn't appearing, open the DSi Shop, close it, and then try again
-3. Exit to the DSi Menu
-1. Open the Flipnote Studio application
-  - Ensure that the *booting to Calendar mode* is disabled in Flipnote Studio's settings
-  - If you already have another DSiWare exploit installed, open that and skip to Step 17
-2. Select **View Flipnote > SD Card > Select Folder > User > ugopwn**
-3. Click on the note with the red bottom half
-4. Select "Edit"
-5. Click on the Flipnote frog icon in the bottom left
-6. Click on the film roll icon
-7. Select **Copy > Back > Exit**
-8. Click the second note.
-9. Click on the Flipnote frog icon in the bottom left
-10. Click on the film roll icon.
-11. Click on the single right arrow (the next to last arrow icon) two times
-  - You will see a new frame be created
-12. Click on the paste button exactly 122 times.
-13. Select "Erase" and then "Paste"
-  - This should launch fwTool
-14. Select the options `Dump CID` and `Dump BIOS`
-15. Select `Dump  nand_dsi.bin`
-  - This will take a few minutes
-15. Once finished, power off your device
+1. Apri l'applicazione Impostazioni
+2. Seleziona **Gestione dati > Console > Flipnote Studio > Copia > Sì**
+	- Se Gestione Dati non appare, apri il DSi Shop, chiudilo e riprova
+3. Torna al Menu DSi
+1. Apri l'applicazione Flipnote Studio
+  - Assicurati che l'opzione *Apri calendario all'avvio* sia disabilitata nelle impostazioni di Flipnote Studio
+  - Se hai un'altro exploit DSiWare installato, apri quello e salta al Passo 17
+2. Seleziona **Visualizza > Scheda SD > Seleziona Cartella > User > ugopwn**
+3. Clicca sul Flipnote per metà rosso
+4. Seleziona "Modifica"
+5. Clicca sull'icona della rana in basso a sinistra
+6. Clicca sull'icona del rullino
+7. Seleziona **Copia > Indietro > Esci**
+8. Clicca sul seondo flipnote.
+9. Clicca sull'icona della rana in basso a sinistra
+10. Clicca sull'icona del rullino.
+11. Clicca sul tasto con una sola freccia a destra (accanto all'ultimo tasto con due freccie) due volte
+  - Verrà creato un nuovo foglio
+12. Clicca il tasto incolla esattamente 122 volte.
+13. Seleziona "Cancella" e poi "Incolla"
+  - Ciò dovrebbe avviare fwTool
+14. Seleziona le opzioni `Dump CID` e `Dump BIOS`
+15. Seleziona `Dump  nand_dsi.bin`
+  - Questo richiederà qualche minuto
+15. Una volta fatto, spegni la console
 
-## Preparing for TempNAND and No$GBA
+## Preparazione per TempNAND e No$GBA
 
-1. Download and extract the No$GBA `.zip` file to a folder on your Desktop
-2. Insert your SD card into your computer
-3. Open the folder in your SD card with seemingly random numbers
-4. Copy the DSi BIOS to the NO$GBA folder
-4. Copy `nand_dsi.bin` to a safe location on your computer
-5. Rename `nand_dsi.bin` to `clean_nand_dsi.bin`
-6. Copy `CID.bin` to a safe location on your computer
-7. Copy the contents of the Unlaunch `.zip` file to a folder on your Desktop
-8. Copy the contents of the DSi SRL Extractor `.zip` file to a folder on your Desktop
-9. Navigate to /Private/DS/Title/ on your SD card
-10. Copy the `.bin` file to your DSi SRL Extractor folder
-11. Run the `console_id.py` file inside the folder
-  - This script requires [WINE](https://www.winehq.org/){:target="_blank"} on Mac/Linux/*nix systems
-12. When prompted, press Enter
-13. Copy the new `console_id.txt` file to a safe location on your computer
-
+1. Scarica ed estrai il file `.zip` di No$GBA in una cartella sul Desktop
+2. Inserisci la Scheda SD nel computer
+3. Apri la cartella con numeri casuali nella Scheda SD
+4. Copia il BIOS DSi alla cartella di NO$GBA
+4. Copia il file `nand_dsi.bin` in un posto sicuro sul tuo computer
+5. Rinomina il file `nand_dsi.bin` a `clean_nand_dsi.bin`
+6. Copia il file `CID.bin` in un posto sicuro sul tuo computer
+7. Copia i contenuti del file `.zip` di Unlaunch in una cartella sul Desktop
+8. Copia i contenuti del file DSi `.zip` di SRL Extractor in una cartella sul Desktop
+9. Vai a /Private/DS/Title/ sulla tua Scheda SD
+10. Copia il file `.bin` nella cartella di DSi SRL Extractor
+11. Esegui il file `console_id.py` dentro la cartella
+  - Questo script richiede [WINE](https://www.winehq.org/){:target="_blank"} su sistemi Mac/Linux/*nix
+12. Quando richiesto, premi Invio
+13. Copia il nuovo file `console_id.txt` in un posto sicuro sul tuo computer
+zip
 ## Using TempNAND
 
-1. Download and extract the TempNAND `.zip` file to somewhere on your computer
-2. Open the TempNAND `.jar` file
-  - Make sure you have Java installed
-3. Navigate to the setup tab
-4. Select **Console ID > get Console ID from file**
-5. Select your `console_id.txt` file from earlier
-6. Select **CID > get CID from file**
-7. Select your `CID.bin` file from earlier
-8. Select **File > Open Encrypted NAND**
-9. Select your `clean_nand_dsi.bin` file from earlier
-  - This might take a few seconds
-  - If it appears to freeze, give it time
-10. Select "Install Unlaunch"
-11. Select `unlaunch.dsi` from the Unlaunch `.zip` you extracted earlier
-12. Select **File > Save As**
-13. Save a copy of your NAND backup for later use
-14. Rename it to `unlaunch_nand_dsi.bin`
-15. Select **File > Save for No$GBA**
-16. Save a the file to the NO$GBA folder
-17. Rename the No$GBA NAND backup to `DSI-1.mmc`
+1. Scarica ed estrai il file `.zip` di TempNAND da qualche parte sul Computer
+2. Apri il file `.jar` di TempNAND
+  - Assicurati di avere Java installato
+3. Vai nella scheda setup
+4. Seleziona **Console ID > get Console ID from file**
+5. Seleziona il file `console_id.txt` preso in precedenza
+6. Seleziona **CID > get CID from file**
+7. Seleziona il file `CID.bin` preso in precedenza
+8. Seleziona **File > Open Encrypted NAND**
+9. Seleziona il file `clean_nand_dsi.bin` preso in precedenza
+  - Potrebbe richiedere qualche secondo
+  - Se sembra essersi bloccato, dalli tempo
+10. Seleziona "Install Unlaunch"
+11. Seleziona il file `unlaunch.dsi` dal file `.zip` di Unlaunch che hai estratto in precedenza
+12. Seleziona **File > Save As**
+13. Salva una copia del backup della NAND per utilizzarlo più tardi
+14. Rinominalo in `unlaunch_nand_dsi.bin`
+15. Seleziona **File > Save for No$GBA**
+16. Salva il file nella cartella di No$GBA
+17. Rinomina il backup della NAND di No$GBA in `DSI-1.mmc`
 
-## Testing NAND
+## Test della NAND
 
-1. Open No$GBA
-2. Select **Options > Emulation Setup**
-3. Set "Reset/Startup Entrypoint" to "GBA/NDS BIOS (Nintendo Logo)"
-4. Set "NDS Mode Colors" to "DSi (retail/16MB)"
-5. Select **Save Now > OK**
-6. Select **File >> Cartridge Menu (FileName)**
-7. Open the `.nds` file
+1. Apri No$GBA
+2. Seleziona **Options > Emulation Setup**
+3. Imposta "Reset/Startup Entrypoint" a "GBA/NDS BIOS (Nintendo Logo)"
+4. Imposta "NDS Mode Colors" a "DSi (retail/16MB)"
+5. Seleziona **Save Now > OK**
+6. Seleziona **File >> Cartridge Menu (FileName)**
+7. Apri il file `.nds`
 
-Your NAND should now be emulated by No$GBA. If it does not work, the NAND backup is not safe to use and it is not safe to flash it to your DSi.
+La tua NAND verrà emulata da No$GBA. Se non funziona, il backup della NAND non è sicuro da usare e non è sicura flasharla sul DSi.
 
-If the backup works in No$GBA, feel free to continue to the next section.
+Se il backup funziona su No$GBA, continua pure nella prossima sezione.
 
-## Reflashing NAND
+## Flash della NAND
 
-1. Copy the `unlaunch_nand_dsi.bin` file back to the folder on your SD card created by fwTool
-2. Delete the `nand_dsi.bin` file on your SD card
-  - Make sure you still have the original backup on your computer!
-3. Rename `unlaunch_nand_dsi.bin` to `nand_dsi.bin`
-4. Open the Flipnote Studio application
-  - Ensure that the *booting to Calendar mode* is disabled in Flipnote Studio's settings
-  - If you already have another DSiWare exploit installed, open that and skip to Step 16
-5. Select **View Flipnote > SD Card > Select Folder > User > ugopwn**
-6. Click on the note with the red bottom half
-7. Select "Edit"
-8. Click on the Flipnote frog icon in the bottom left
-9. Click on the film roll icon
-10. Select **Copy > Back > Exit**
-11. Click the second note.
-12. Click on the Flipnote frog icon in the bottom left
-13. Click on the film roll icon.
-14. Click on the single right arrow (the next to last arrow icon) two times
-  - You will see a new frame be created
-15. Click on the paste button exactly 122 times.
-16. Select "Erase" and then "Paste"
-  - This should launch fwTool
-17. Select "Restore `nand_dsi.bin`"
-  - This will take a few minutes
-18. After it has finished, power off your console
+1. Copia il file `unlaunch_nand_dsi.bin` nella cartella creata da fwTool
+2. Elimina il file `nand_dsi.bin` sulla Scheda SD
+  - Assicurati di avere il backup originale sul Computer!
+3. Rinomina `unlaunch_nand_dsi.bin` in `nand_dsi.bin`
+4. Apri l'applicazione Flipnote Studio
+  - Assicurati che l'opzione *Apri calendario all'avvio* sia disabilitata nelle impostazioni di Flipnote Studio
+  - Se hai un'altro exploit DSiWare installato, apri quello e salta al Passo 16
+5. Seleziona **Visualizza > Scheda SD > Seleziona Cartella > User > ugopwn**
+6. Clicca sul Flipnote per metà rosso
+7. Seleziona "Modifica"
+8. Clicca sull'icona della rana in basso a sinistra
+9. Clicca sull'icona del rullino
+10. Seleziona **Copia > Indietro > Esci**
+11. Clicca sul seondo flipnote.
+12. Clicca sull'icona della rana in basso a sinistra
+13. Clicca sull'icona nel rullino
+14. Clicca sul tasto con una sola freccia a destra (accanto all'ultimo tasto con due freccie) due volte
+  - Verrà creato un nuovo foglio
+15. Clicca il tasto incolla esattamente 122 volte.
+16. Seleziona "Cancella" e poi "Incolla"
+  - Ciò dovrebbe avviare fwTool
+17. Seleziona "Restore `nand_dsi.bin`"
+  - Richiederà qualche minuto
+18. Una volta finito, spegni la console
 
-Your console should now have Unlaunch installed. With Unlaunch installed, your system now has primitive brick protection, unless the launcher’s TMD file is destroyed. Unlaunch has protections that should prevent this from happening, and HiyaCFW uses your SD card as the DSi’s NAND, making your system theoretically unbrickable.
+Con Unlaunch installato, il tuo sistema ha una protezione dai brick di base, a meno che il file TMD del launcher non venga distrutto. Unlaunch ha protezioni che dovrebbero impedire questo dal succedere, e HiyaCFW usa la tua Scheda SD come NAND del DSi, facendo così il sistema teoricamente non brickabile.
 
-[Installing HiyaCFW](/guide/installing-hiyacfw){: .btn .btn--light-outline}
+[Installazione di HiyaCFW](/guide/installing-hiyacfw){: .btn .btn--light-outline}
 {: style="text-align: center;"}
